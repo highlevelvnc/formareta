@@ -176,7 +176,7 @@ function ContactForm() {
         <Field label="Nome completo" name="nome" required placeholder="Como devemos tratá-lo?" />
         <Field label="Email" name="email" type="email" required placeholder="nome@dominio.pt" />
         <Field label="Telefone" name="telefone" required placeholder="+351 910 000 000" />
-        <Field label="Localização do imóvel" name="local" placeholder="Ex: Estoril, Lisboa" />
+        <Field label="Localização do imóvel" name="local" placeholder="Ex: Baixa de Lisboa" />
 
         {/* Service selector */}
         <div className="md:col-span-2">

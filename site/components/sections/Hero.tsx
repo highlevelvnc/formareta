@@ -126,11 +126,11 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="mb-8 inline-flex items-center gap-4 border border-bone/25 bg-ink/25 px-4 py-2 backdrop-blur-sm"
+              className="mb-8 inline-flex items-center gap-3 border border-bone/25 bg-ink/25 px-3.5 py-1.5 backdrop-blur-sm"
             >
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              <span className="text-eyebrow uppercase text-bone/85">
-                Reabilitação e construção · Portugal
+              <span className="whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.28em] text-bone/85">
+                Reabilitação &middot; Lisboa
               </span>
             </motion.div>
 

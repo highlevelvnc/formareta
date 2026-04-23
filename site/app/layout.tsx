@@ -3,6 +3,7 @@ import { Inter, Archivo, Instrument_Serif } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
+import { BRAND } from "@/lib/constants";
 import "./globals.css";
 
 const inter = Inter({
@@ -68,6 +69,36 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  name: "Forma Reta",
+  alternateName: "Forma Reta Construção e Remodelação",
+  description:
+    "Empresa portuguesa de construção, remodelação e demolição, especializada em reabilitação de edifícios antigos em Lisboa e área metropolitana.",
+  url: siteUrl,
+  logo: `${siteUrl}/icon`,
+  image: `${siteUrl}/opengraph-image`,
+  telephone: BRAND.phones.whatsapp,
+  email: BRAND.email,
+  priceRange: "€€€",
+  areaServed: ["Lisboa", "Setúbal", "Cascais", "Oeiras", "Sintra", "Portugal"],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Lisboa",
+    addressCountry: "PT",
+  },
+  sameAs: [BRAND.social.instagram],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "19:00",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -76,10 +107,20 @@ export default function RootLayout({
   return (
     <html lang="pt-PT" className={`${inter.variable} ${archivo.variable} ${instrument.variable}`}>
       <body className="min-h-dvh bg-bone text-ink antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:bg-ink focus:px-4 focus:py-2 focus:text-xs focus:uppercase focus:tracking-[0.3em] focus:text-bone"
+        >
+          Saltar para o conteúdo
+        </a>
         <Header />
         <main id="main">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
