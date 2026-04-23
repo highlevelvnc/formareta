@@ -118,7 +118,7 @@ export function Hero() {
       {/* Main copy */}
       <motion.div
         style={{ y: textY, opacity: textOpacity }}
-        className="shell relative z-10 pb-32 pt-36"
+        className="shell relative z-10 pb-28 pt-28 sm:pt-32 md:pb-32 md:pt-36"
       >
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-8">

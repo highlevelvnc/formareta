@@ -44,27 +44,28 @@ export function Counter() {
           </Reveal>
         </div>
 
-        <ul className="mt-16 grid grid-cols-2 border-t border-bone/15 lg:grid-cols-4">
+        <ul className="mt-12 grid grid-cols-2 border-t border-bone/15 md:mt-16 lg:grid-cols-4">
           {STATS.map((stat, i) => (
             <li
               key={stat.label}
               className={
-                "flex flex-col justify-between border-b border-bone/15 py-10 pr-6 lg:border-b-0 lg:py-12 " +
+                "flex flex-col justify-between border-b border-bone/15 py-8 pr-4 sm:py-10 sm:pr-6 lg:border-b-0 lg:py-12 " +
+                (i % 2 === 1 ? "border-l border-bone/15 pl-4 sm:pl-6 " : "") +
                 (i > 0 ? "lg:border-l lg:border-bone/15 lg:pl-10 " : "") +
                 (i < STATS.length - 1 ? "lg:pr-10" : "")
               }
             >
-              <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.28em] text-bone/45">
-                <span className="h-px w-6 bg-accent" />
+              <div className="flex items-center gap-2 text-[9px] uppercase tracking-[0.28em] text-bone/45 sm:gap-3 sm:text-[10px]">
+                <span className="h-px w-4 bg-accent sm:w-6" />
                 {stat.hint}
               </div>
-              <div className="mt-10 flex items-baseline gap-1">
+              <div className="mt-6 flex items-baseline gap-1 sm:mt-10">
                 <Animated value={stat.value} />
-                <span className="font-serif text-5xl font-normal leading-none text-accent md:text-6xl lg:text-7xl">
+                <span className="font-serif text-3xl font-normal leading-none text-accent sm:text-5xl md:text-6xl lg:text-7xl">
                   {stat.suffix}
                 </span>
               </div>
-              <div className="mt-4 text-sm uppercase tracking-[0.2em] text-bone/65">
+              <div className="mt-3 text-xs uppercase tracking-[0.16em] text-bone/65 sm:mt-4 sm:text-sm sm:tracking-[0.2em]">
                 {stat.label}
               </div>
             </li>
@@ -97,7 +98,7 @@ function Animated({ value }: { value: number }) {
   return (
     <span
       ref={ref}
-      className="font-serif text-[64px] font-normal leading-[0.85] tabular-nums text-bone md:text-[84px] lg:text-[112px]"
+      className="font-serif text-[48px] font-normal leading-[0.85] tabular-nums text-bone sm:text-[64px] md:text-[84px] lg:text-[112px]"
     >
       {display}
     </span>

@@ -26,9 +26,9 @@ export function Reels() {
         </div>
       </div>
 
-      <div className="mt-16 overflow-hidden">
-        <div className="shell">
-          <div className="scrollbar-none flex snap-x snap-mandatory gap-5 overflow-x-auto pb-6 pr-6 md:gap-6">
+      <div className="mt-12 overflow-hidden md:mt-16">
+        <div className="shell !pr-0">
+          <div className="scrollbar-none flex snap-x snap-mandatory gap-4 overflow-x-auto pb-6 pr-6 sm:gap-5 md:gap-6">
             {REELS.map((reel, i) => (
               <ReelCard key={reel.id} reel={reel} index={i} />
             ))}
@@ -85,7 +85,7 @@ function ReelCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
-      className="group relative aspect-[9/16] w-[260px] shrink-0 snap-start overflow-hidden border border-bone-300 bg-ink sm:w-[300px] lg:w-[340px]"
+      className="group relative aspect-[9/16] w-[240px] shrink-0 snap-start overflow-hidden border border-bone-300 bg-ink sm:w-[300px] lg:w-[340px]"
     >
       {/* Poster (shows until the user hits play) */}
       <Image

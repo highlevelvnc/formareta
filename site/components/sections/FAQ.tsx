@@ -74,11 +74,11 @@ function FaqItem({
       <button
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="group flex w-full items-start justify-between gap-8 py-7 text-left"
+        className="group flex w-full items-start justify-between gap-4 py-6 text-left md:gap-8 md:py-7"
       >
-        <span className="flex items-start gap-6">
-          <span className="number-tag mt-1 w-10 shrink-0">0{index + 1}</span>
-          <span className="font-display text-lg uppercase tracking-[-0.005em] text-ink md:text-xl">
+        <span className="flex items-start gap-4 md:gap-6">
+          <span className="number-tag mt-1 w-8 shrink-0 md:w-10">0{index + 1}</span>
+          <span className="font-serif text-[17px] font-normal leading-[1.25] tracking-[-0.005em] text-ink md:text-[22px]">
             {faq.q}
           </span>
         </span>
@@ -107,7 +107,7 @@ function FaqItem({
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden"
           >
-            <div className="pb-8 pl-16 pr-16">
+            <div className="pb-7 pl-12 pr-4 md:pb-8 md:pl-16 md:pr-16">
               <p className="max-w-2xl text-body text-ink-400">{faq.a}</p>
             </div>
           </motion.div>

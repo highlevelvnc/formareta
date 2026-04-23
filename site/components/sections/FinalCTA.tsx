@@ -41,12 +41,14 @@ export function FinalCTA() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <h2 className="font-serif text-display-lg font-normal leading-[1.02] tracking-[-0.01em] text-bone">
-              Uma obra merece{" "}
-              <span className="italic text-accent">mais que</span> um
-              orçamento.
-              <br />
-              Merece um <span className="stroke-text">parceiro</span>.
+            <h2 className="font-serif text-display-lg font-normal leading-[1.05] tracking-[-0.01em] text-bone">
+              <span className="block">
+                Uma obra merece <span className="italic text-accent">mais que</span>
+              </span>
+              <span className="block">um orçamento.</span>
+              <span className="mt-2 block sm:mt-3">
+                Merece um <span className="stroke-text">parceiro</span>.
+              </span>
             </h2>
           </Reveal>
 

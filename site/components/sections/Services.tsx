@@ -87,7 +87,7 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[number] }) {
     <StaggerItem
       as="li"
       className={cn(
-        "group relative isolate flex min-h-[400px] flex-col justify-between border-b border-r border-bone-300 bg-bone p-10 transition-colors duration-700 ease-out-expo",
+        "group relative isolate flex min-h-[300px] flex-col justify-between border-b border-r border-bone-300 bg-bone p-7 transition-colors duration-700 ease-out-expo sm:p-9 md:min-h-[380px] lg:min-h-[400px] lg:p-10",
         "hover:bg-ink hover:text-bone",
       )}
     >
@@ -106,14 +106,14 @@ function ServiceCard({ service }: { service: (typeof SERVICES)[number] }) {
         />
       </div>
 
-      <div className="mt-16">
-        <h3 className="font-serif text-[30px] font-normal leading-[1.05] tracking-[-0.005em] text-ink transition-colors duration-700 ease-out-expo group-hover:text-bone">
+      <div className="mt-10 md:mt-16">
+        <h3 className="font-serif text-[26px] font-normal leading-[1.05] tracking-[-0.005em] text-ink transition-colors duration-700 ease-out-expo group-hover:text-bone md:text-[28px] lg:text-[30px]">
           {service.title}
         </h3>
         <p className="mt-3 text-eyebrow uppercase text-accent/90">
           {service.short}
         </p>
-        <p className="mt-6 max-w-sm text-body text-ink-400 transition-colors duration-700 ease-out-expo group-hover:text-bone/70">
+        <p className="mt-4 max-w-sm text-body text-ink-400 transition-colors duration-700 ease-out-expo group-hover:text-bone/70 md:mt-6">
           {service.body}
         </p>
       </div>

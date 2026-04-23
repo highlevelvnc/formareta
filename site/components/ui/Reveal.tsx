@@ -57,7 +57,7 @@ export function Stagger({
   delayChildren = 0,
   staggerChildren = 0.08,
   as = "div",
-  amount = 0.2,
+  amount = 0.05,
 }: {
   children: ReactNode;
   className?: string;
@@ -80,7 +80,7 @@ export function Stagger({
       variants={variants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount }}
+      viewport={{ once: true, amount, margin: "0px 0px -10% 0px" }}
     >
       {children}
     </MotionTag>

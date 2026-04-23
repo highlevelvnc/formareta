@@ -63,7 +63,7 @@ function PillarCard({ pillar, index }: { pillar: Pillar; index: number }) {
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.9, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
       className={cn(
-        "group relative isolate flex min-h-[380px] flex-col justify-between overflow-hidden px-8 py-14 md:px-10 md:py-20 lg:min-h-[460px] lg:px-14",
+        "group relative isolate flex min-h-[260px] flex-col justify-between overflow-hidden border-b border-bone-300 px-6 py-12 last:border-b-0 md:min-h-[380px] md:border-b-0 md:px-10 md:py-20 lg:min-h-[460px] lg:px-14",
         index < 2 && "md:border-r md:border-bone-300",
       )}
     >
@@ -91,14 +91,14 @@ function PillarCard({ pillar, index }: { pillar: Pillar; index: number }) {
       </div>
 
       {/* bottom */}
-      <div className="mt-24">
-        <h3 className="font-serif text-[40px] font-normal leading-[0.95] tracking-[-0.01em] text-ink md:text-[56px] lg:text-[64px]">
+      <div className="mt-10 md:mt-24">
+        <h3 className="font-serif text-[34px] font-normal leading-[0.95] tracking-[-0.01em] text-ink md:text-[56px] lg:text-[64px]">
           {pillar.name}
         </h3>
-        <p className="mt-6 max-w-sm text-body text-ink-400">{pillar.summary}</p>
+        <p className="mt-4 max-w-sm text-body text-ink-400 md:mt-6">{pillar.summary}</p>
         <Link
           href="#servicos"
-          className="mt-8 inline-flex items-center gap-3 text-label uppercase text-ink transition-colors hover:text-accent"
+          className="mt-6 inline-flex items-center gap-3 text-label uppercase text-ink transition-colors hover:text-accent md:mt-8"
         >
           <span>Explorar</span>
           <ArrowUpRight

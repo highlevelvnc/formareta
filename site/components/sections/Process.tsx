@@ -72,21 +72,21 @@ export function Process() {
               >
                 {/* Node */}
                 <div className="relative">
-                  <div className="flex h-[104px] w-[104px] items-center justify-center border border-bone-300 bg-bone transition-all duration-500 ease-out-expo group-hover:border-accent group-hover:bg-ink group-hover:text-bone">
-                    <s.Icon strokeWidth={1.2} className="h-7 w-7 text-ink-500 transition-colors duration-500 group-hover:text-bone" />
+                  <div className="flex h-[88px] w-[88px] items-center justify-center border border-bone-300 bg-bone transition-all duration-500 ease-out-expo group-hover:border-accent group-hover:bg-ink group-hover:text-bone md:h-[104px] md:w-[104px]">
+                    <s.Icon strokeWidth={1.2} className="h-6 w-6 text-ink-500 transition-colors duration-500 group-hover:text-bone md:h-7 md:w-7" />
                   </div>
                   <span className="absolute -right-2 -top-2 bg-accent px-2 py-1 font-display text-[10px] tracking-widest text-bone">
                     {s.num}
                   </span>
                 </div>
 
-                <h3 className="mt-10 font-display text-xl uppercase tracking-[-0.005em]">
+                <h3 className="mt-8 font-serif text-xl font-normal tracking-[-0.005em] md:mt-10">
                   {s.title}
                 </h3>
-                <p className="mt-5 max-w-[240px] text-body text-ink-400">
+                <p className="mt-4 max-w-[240px] text-body text-ink-400 md:mt-5">
                   {s.body}
                 </p>
-                <span className="mt-7 inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.28em] text-accent">
+                <span className="mt-6 inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.28em] text-accent md:mt-7">
                   <span className="h-px w-6 bg-accent" />
                   {s.duration}
                 </span>

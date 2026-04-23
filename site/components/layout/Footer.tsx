@@ -9,9 +9,9 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-ink text-bone">
       <div className="grid-technical-light absolute inset-0 opacity-40" aria-hidden />
       <div className="relative">
-        <div className="shell pb-16 pt-20">
-          <div className="grid gap-16 border-b border-bone/10 pb-16 lg:grid-cols-12">
-            <div className="lg:col-span-5">
+        <div className="shell pb-12 pt-16 sm:pb-16 sm:pt-20">
+          <div className="grid gap-12 border-b border-bone/10 pb-12 sm:gap-16 sm:pb-16 md:grid-cols-2 lg:grid-cols-12">
+            <div className="md:col-span-2 lg:col-span-5">
               <Logo tone="bone" />
               <p className="mt-10 max-w-md text-body text-bone/65">
                 Empresa portuguesa de construção, remodelação e demolição.

@@ -41,10 +41,10 @@ export function Contact() {
             <ContactForm />
           </div>
 
-          <aside className="flex flex-col gap-12 lg:col-span-5 lg:pl-10">
+          <aside className="flex flex-col gap-10 lg:col-span-5 lg:gap-12 lg:pl-10">
             <Reveal delay={0.1}>
-              <div className="bg-ink p-10 text-bone">
-                <h3 className="font-display text-xl uppercase tracking-[-0.005em]">
+              <div className="bg-ink p-7 text-bone sm:p-9 lg:p-10">
+                <h3 className="font-serif text-xl font-normal tracking-[-0.005em]">
                   Canais directos
                 </h3>
                 <p className="mt-3 text-sm text-bone/60">
@@ -83,7 +83,7 @@ export function Contact() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="border border-bone-300 p-10">
+              <div className="border border-bone-300 p-7 sm:p-9 lg:p-10">
                 <h4 className="flex items-center gap-3 text-label uppercase text-ink">
                   <span className="h-px w-6 bg-accent" />
                   Visita técnica

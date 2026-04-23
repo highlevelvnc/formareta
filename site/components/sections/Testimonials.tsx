@@ -59,14 +59,14 @@ export function Testimonials() {
             <StaggerItem
               key={t.name}
               as="li"
-              className="group flex h-full flex-col justify-between border border-bone-300 bg-bone-100 p-10 transition-all duration-500 ease-out-expo hover:border-ink"
+              className="group flex h-full flex-col justify-between border border-bone-300 bg-bone-100 p-7 transition-all duration-500 ease-out-expo hover:border-ink sm:p-9 lg:p-10"
             >
               <div>
                 <Quote
                   strokeWidth={1}
                   className="h-8 w-8 text-accent transition-transform duration-500 ease-out-expo group-hover:-translate-y-1"
                 />
-                <blockquote className="mt-8 font-serif text-[22px] font-normal leading-[1.4] text-ink-600">
+                <blockquote className="mt-6 font-serif text-[19px] font-normal leading-[1.4] text-ink-600 sm:mt-8 sm:text-[22px]">
                   <p>&ldquo;{t.quote}&rdquo;</p>
                 </blockquote>
               </div>
