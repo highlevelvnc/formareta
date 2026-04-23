@@ -44,7 +44,7 @@ export function Process() {
       <div className="grid-technical absolute inset-0 opacity-50" aria-hidden />
       <div className="shell relative">
         <SectionHeader
-          count="[ 06 ]"
+          count="[ 07 ]"
           eyebrow="Método"
           title="Um processo estruturado em quatro momentos claros."
           description="Cada obra segue um método que já provou ser eficaz em dezenas de intervenções. Sabe o que esperar, quando esperar e quem contactar a cada momento."

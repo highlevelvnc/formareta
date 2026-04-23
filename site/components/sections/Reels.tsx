@@ -14,7 +14,7 @@ export function Reels() {
       <div className="shell">
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <SectionHeader
-            count="[ 05 ]"
+            count="[ 06 ]"
             eyebrow="Bastidores de obra"
             title="Obra a decorrer, sem filtros."
             description="Momentos captados no estaleiro — reforços estruturais, demolições controladas e acabamentos. Imagens reais, feitas pela equipa."

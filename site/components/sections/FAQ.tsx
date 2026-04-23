@@ -41,7 +41,7 @@ export function FAQ() {
         <div className="grid gap-16 lg:grid-cols-12">
           <div className="lg:col-span-5 lg:pr-12">
             <SectionHeader
-              count="[ 08 ]"
+              count="[ 09 ]"
               eyebrow="Perguntas frequentes"
               title="O que costumam perguntar antes de começar a obra."
               description="Uma resposta directa às dúvidas mais recorrentes. Para qualquer questão adicional, estamos a um contacto de distância."

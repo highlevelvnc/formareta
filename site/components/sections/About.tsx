@@ -37,7 +37,6 @@ export function About() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-ink/5 mix-blend-multiply" />
               </motion.div>
 
               <div className="absolute -bottom-10 left-6 z-10 bg-ink p-8 text-bone lg:-bottom-12 lg:-right-12 lg:left-auto">

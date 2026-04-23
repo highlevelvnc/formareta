@@ -44,7 +44,7 @@ export function Differentials() {
         <div className="grid gap-16 lg:grid-cols-12">
           <div className="lg:col-span-5 lg:pr-10">
             <SectionHeader
-              count="[ 03 ]"
+              count="[ 04 ]"
               eyebrow="Porquê a Forma Reta"
               title="Seis compromissos que tornam a diferença real, não publicitária."
               description="Aquilo que defendemos abaixo não é discurso de marketing — são princípios de trabalho aplicados em cada obra. Escritos para serem cobrados pelo cliente."

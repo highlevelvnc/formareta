@@ -57,7 +57,7 @@ export function Services() {
       <div className="shell">
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <SectionHeader
-            count="[ 02 ]"
+            count="[ 03 ]"
             eyebrow="Serviços"
             title="Expertise integrada, do licenciamento ao último detalhe."
             description="Um leque de serviços construído para que cada projeto tenha a mesma coerência técnica e acabamento — da demolição inicial ao último revestimento."

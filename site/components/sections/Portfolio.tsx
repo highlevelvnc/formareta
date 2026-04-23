@@ -118,21 +118,20 @@ export function Portfolio() {
   return (
     <section
       id="obras"
-      className="relative overflow-hidden bg-ink py-[var(--section-y)] text-bone"
+      className="relative overflow-hidden bg-bone-100 py-[var(--section-y)]"
     >
-      <div className="grid-technical-light absolute inset-0 opacity-30" aria-hidden />
+      <div className="grid-technical absolute inset-0 opacity-30" aria-hidden />
       <div className="shell relative">
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <SectionHeader
-            count="[ 04 ]"
+            count="[ 05 ]"
             eyebrow="Obras recentes"
             title="Obra real, documentada em todas as fases."
             description="Uma seleção de intervenções recentes em reabilitação, demolição e reforço estrutural. Sem renders — imagens de obra a decorrer, no estaleiro."
-            tone="bone"
           />
           <Link
             href="#contacto"
-            className="group hidden items-center gap-3 text-label uppercase text-bone/80 transition-colors hover:text-accent lg:inline-flex"
+            className="group hidden items-center gap-3 text-label uppercase text-ink-500 transition-colors hover:text-accent lg:inline-flex"
           >
             Discutir a sua obra
             <ArrowUpRight
@@ -143,8 +142,8 @@ export function Portfolio() {
         </div>
 
         <Reveal className="mt-16" delay={0.1}>
-          <div className="flex flex-wrap items-center gap-3 border-b border-bone/10 pb-6">
-            <span className="mr-4 text-eyebrow uppercase text-bone/40">
+          <div className="flex flex-wrap items-center gap-3 border-b border-bone-300 pb-6">
+            <span className="mr-4 text-eyebrow uppercase text-ink-400">
               Filtrar
             </span>
             {FILTERS.map((f) => (
@@ -153,13 +152,13 @@ export function Portfolio() {
                 onClick={() => setFilter(f)}
                 className={cn(
                   "group relative px-4 py-2 text-label uppercase transition-colors",
-                  filter === f ? "text-ink" : "text-bone/60 hover:text-bone",
+                  filter === f ? "text-bone" : "text-ink-400 hover:text-ink",
                 )}
               >
                 {filter === f && (
                   <motion.span
                     layoutId="filter-pill"
-                    className="absolute inset-0 -z-10 bg-bone"
+                    className="absolute inset-0 -z-10 bg-ink"
                     transition={{ type: "spring", stiffness: 380, damping: 34 }}
                   />
                 )}
@@ -197,7 +196,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       exit={{ opacity: 0, y: -24 }}
       transition={{ duration: 0.7, delay: index * 0.05, ease: [0.16, 1, 0.3, 1] }}
       className={cn(
-        "group relative isolate overflow-hidden border border-bone/10 bg-ink-800",
+        "group relative isolate overflow-hidden border border-bone-300 bg-ink-50",
         span,
       )}
     >
@@ -206,20 +205,20 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         alt={project.alt}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 66vw"
-        className="object-cover grayscale-[35%] transition-all duration-[1200ms] ease-out-expo group-hover:scale-[1.04] group-hover:grayscale-0"
+        className="object-cover transition-all duration-[1200ms] ease-out-expo group-hover:scale-[1.04]"
       />
 
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink via-ink/70 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-ink via-ink/55 to-transparent transition-opacity duration-500" />
 
-      <div className="absolute left-4 top-4 flex items-center gap-2 bg-ink/70 px-3 py-1.5 backdrop-blur-sm">
+      <div className="absolute left-4 top-4 flex items-center gap-2 bg-bone/90 px-3 py-1.5 backdrop-blur-sm">
         <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-        <span className="text-[10px] uppercase tracking-[0.28em] text-bone/85">
+        <span className="text-[10px] uppercase tracking-[0.28em] text-ink">
           {project.category}
         </span>
       </div>
 
-      <span aria-hidden className="absolute left-0 top-0 h-6 w-6 border-l border-t border-bone/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-      <span aria-hidden className="absolute bottom-0 right-0 h-6 w-6 border-b border-r border-bone/30 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <span aria-hidden className="absolute left-0 top-0 h-6 w-6 border-l border-t border-accent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <span aria-hidden className="absolute bottom-0 right-0 h-6 w-6 border-b border-r border-accent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
       <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
         <div className="flex items-end justify-between gap-6">
@@ -227,13 +226,13 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             <h3 className="font-serif text-2xl font-normal leading-tight tracking-[-0.005em] text-bone md:text-[28px]">
               {project.title}
             </h3>
-            <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-eyebrow uppercase text-bone/60">
+            <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-eyebrow uppercase text-bone/75">
               <span>{project.location}</span>
               <span>{project.year}</span>
             </div>
-            <p className="mt-2 max-w-sm text-xs text-bone/55">{project.scope}</p>
+            <p className="mt-2 max-w-sm text-xs text-bone/70">{project.scope}</p>
           </div>
-          <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center border border-bone/30 text-bone transition-all duration-500 ease-out-expo group-hover:border-accent group-hover:bg-accent group-hover:text-ink">
+          <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center border border-bone/40 text-bone transition-all duration-500 ease-out-expo group-hover:border-accent group-hover:bg-accent group-hover:text-ink">
             <ArrowUpRight className="h-4 w-4" strokeWidth={1.25} />
           </span>
         </div>

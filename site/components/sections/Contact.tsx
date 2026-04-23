@@ -30,7 +30,7 @@ export function Contact() {
     <section id="contacto" className="relative bg-bone py-[var(--section-y)]">
       <div className="shell">
         <SectionHeader
-          count="[ 09 ]"
+          count="[ 10 ]"
           eyebrow="Contacto"
           title="Tem uma obra em mãos? Conte-nos — respondemos em 24h úteis."
           description="Preencha o formulário ou use um dos canais directos. Em pedidos de orçamento, inclua a localização, a tipologia e o estado actual do imóvel para acelerarmos a resposta."

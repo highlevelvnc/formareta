@@ -34,7 +34,7 @@ export function Testimonials() {
       <div className="shell">
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-end">
           <SectionHeader
-            count="[ 07 ]"
+            count="[ 08 ]"
             eyebrow="Quem já trabalhou connosco"
             title="Clientes, arquitectos e parceiros que nos confiaram as suas obras."
           />
